@@ -6,22 +6,125 @@
     <title>Sriya Bandi</title>
     <link rel="shortcut icon" href="/assets/images/peguin.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .row, .row1, .row2, .row3, .row4, .row5 {
+            margin: 20px 0;
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        .box a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        #about {
+            background-color: #fce4ec;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #about h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #about p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tech-list span {
+            background-color: #ffcccb;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        /* Services Section Styling */
+        .row4 {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fdfce6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .box1 {
+            flex: 1;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 20px;
+            background: white;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box1 h3 {
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .box1 p {
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <div class="container"> 
         <div class="row">
-            <div class="box"> <h1> sriya </h1> </div>
-            <div class="box"> <a href="#home"> Home </a> | <a href="#projects"> Projects </a> | <a href="#about"> About </a> |<a href="#services"> Services </a> |<a href="#contact"> Contact </a></div>
+            <div class="box"> <h1> Sriya </h1> </div>
+            <div class="box"> 
+                <a href="#home"> Home </a> | 
+                <a href="#projects"> Projects </a> | 
+                <a href="#about"> About </a> | 
+                <a href="#services"> Services </a> | 
+                <a href="#contact"> Contact </a>
+            </div>
         </div>
+
         <div class="row1" id="home">
             <div> 
-                <h2>Sriya Bandi</h3>
-                <h2> Iam a web developer </h6>
+                <h2>Sriya Bandi</h2>
+                <h2>I am a Web Developer</h2>
             </div>
-            <div> <img class="imgclass" src="https://picsum.photos/id/77/450/300"> </div>
+            <div> 
+                <img class="imgclass" src="https://picsum.photos/id/77/450/300" alt="Random Image"> 
+            </div>
         </div>
+
         <div class="row2" id="projects">
             <div> 
                 <h2>Projects</h2>
@@ -30,65 +133,60 @@
                     <li>Project 2</li>
                 </ol>
             </div>
-</div>
-<div class="row3" id="about">
-    <div> 
-        <h2>About</h2>
-        <ol> 
-            <li> Technologies and tools </li>
-        </ol>
-    </div>
-</div>
-<h1> Services </h1>
-<div class="row4" id="services">
-            <div class="box1"> 
-                <h3>Web App Development</h3>
-                <p> 
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae doloribus omnis quo id, eos, veniam placeat facilis vel iusto tenetur enim? Vero optio aliquam consequuntur dignissimos voluptatum nisi pariatur facilis.
-                </p>
-            </div>
+        </div>
 
+        <div class="row3" id="about">
+            <div> 
+                <h2>About</h2>
+                <p>
+                    Hello! I'm Sriya Bandi, a passionate web developer, data scientist, and AI enthusiast. With a strong foundation in modern technologies, 
+                    I enjoy building innovative solutions to complex problems. My expertise spans across creating responsive web applications, 
+                    analyzing data for impactful insights, and developing intelligent systems powered by machine learning. 
+                    I'm committed to continuous learning and thrive on challenges that drive personal and professional growth.
+                </p>
+                <h3>Technologies and Tools</h3>
+                <div class="tech-list">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>Data Structures and Algorithms (DSA)</span>
+                    <span>React.js</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="services">Services</h1>
+        <div class="row4">
+            <div class="box1"> 
+                <h3>Web Development</h3>
+                <p>I specialize in creating responsive and dynamic websites using modern technologies. From front-end design to back-end development, I ensure seamless functionality and user-friendly experiences.</p>
+            </div>
             <div class="box1">
-                <h3>Mobile App Development</h3> 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, sed aut excepturi expedita accusantium nisi. Praesentium tenetur unde excepturi error quaerat autem laudantium, distinctio nostrum mollitia vitae sunt temporibus libero!
-                </p>
+                <h3>Data Scientist</h3> 
+                <p>I provide data-driven solutions by analyzing and visualizing complex datasets. With expertise in statistical modeling and machine learning, I help businesses make informed decisions.</p>
             </div>
-
             <div class="box1"> 
-                <h3>Backend Development</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae iusto dolorum tempore, totam exercitationem maiores dignissimos animi quo nemo reprehenderit delectus, vero eos at dolorem. Quos corporis ducimus minima temporibus!
-                </p>
+                <h3>AI & Machine Learning</h3>
+                <p>Leveraging cutting-edge AI and machine learning technologies, I develop intelligent systems capable of automation, prediction, and advanced analytics to solve real-world problems.</p>
             </div>
-    
-</div>
-<div class="row5" id="contact">
-    <div> 
-        <h2>Contact</h2>
-        <ol> 
-            <li> Email </li>
-            <li> Telephone number </li>
-        </ol>
+        </div>
+
+        <div class="row5" id="contact">
+            <div> 
+                <h2>Contact</h2>
+                <ul> 
+                    <li>Email: <a href="mailto:sriyabandi08@gmail.com">sriyabandi08@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/bandi-sriya-42a11322b/" target="_blank">Bandi Sriya</a></li>
+                    <li>GitHub: <a href="https://github.com/sriyabandii" target="_blank">sriyabandii</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h4>&copy; 2024. All rights reserved.</h4>
+        </div>
     </div>
-</div>
-<div class="footer">
-    <h4> @copyright 2024. All the rights reserved. </h4>
-</div>
-</div>
-
-
-
-     
-<!-- </head> 
-<body>
-    <h1>sriya</h1>
-    <hr>
-    <h3>My name is sriya bandi. I'm web developer</h3>
-<img src="https://picsum.photos/seed/picsum/200/300">
-<hr>
-<h4>@copyright 2024. All rights reserved. </body>h4>
-   
-    
 </body>
-</html>-->
+</html>
